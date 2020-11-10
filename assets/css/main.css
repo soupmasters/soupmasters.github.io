@@ -1,0 +1,236 @@
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  vertical-align: baseline; 
+
+}
+
+
+
+ /* --- 1: BANNER --- */
+
+/* ##### ANIMATIONS ##### */
+
+@keyframes blurin-intro {
+  from { filter: blur(12.5px); }
+  to   { filter: blur(0px); }
+}
+
+#banner-section {
+
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.logo {
+
+  max-width: 50%;
+
+} @media screen and (max-width: 1080px) {
+
+  .logo {
+
+    max-width: 95%;
+    padding-bottom: 100px;
+  
+  }
+
+}
+
+/* --- 3: LINKS --- */
+
+
+#links-section {
+
+  width: 100vw;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.icon {
+
+  transition: transform .2s; 
+
+}
+
+.icon:hover {
+
+  transform: rotate(-5deg) scale(1.2);
+
+}
+
+/* --- 2: LEGAL --- */
+
+#legal-section {
+
+  width: 100vw;
+
+}
+
+
+/* --- FLEX LAYOUT --- */
+
+
+
+.flex-center {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+} @media screen and (max-width: 1000px) {
+
+  .flex-center {
+
+    flex-direction: column;
+  
+  } 
+
+}
+
+.flex-updown {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+ /* --- TEXT --- */
+
+h1, h2, h3, h4, h5, h6, p {
+
+  text-align: left;
+
+}
+
+h1 {
+
+   font-size: 30px;
+   font-weight: normal;
+
+
+}
+
+h2 {
+
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+p {
+
+  font-size: 20px;
+  font-weight: none;
+
+}
+
+a:link, a:visited {
+
+  text-decoration: none;
+
+}
+
+a {
+    color: black;
+}
+
+.handwriting {
+
+  font-family: 'Gochi Hand', cursive;
+
+}
+
+ /* --- GENERAL --- */
+
+html body {
+  
+  overflow: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+::-webkit-scrollbar {
+  width: 0px; 
+  background: transparent;
+}
+
+
+ /* --- EFFECTS --- overflow: visible; */ 
+
+ .shadow-smear {
+
+  box-shadow: -5px 8px 50px 10px #555;
+
+}
+
+.tilt-left {
+
+  transform: rotate(-2deg);
+
+}
+
+.tilt-right {
+
+  transform: rotate(2deg);
+
+}
+
+.border {
+
+  border: 5px solid black;
+  padding: 5px 50px;
+  text-overflow: clip;
+
+}
+
+span > .space-1{
+
+  width: 3%;
+  height: 3%;
+
+}
+
+ /* --- EFFECTS --- overflow: visible; */ 
+
+ .no-copy {
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
+
+}
+
+.all-copy {  
+
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all; 
+
+}
+
+/*btn_background*/

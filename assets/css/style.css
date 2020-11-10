@@ -1,0 +1,32 @@
+
+/* --- COLORS --- */
+
+.black { color: black; }
+
+.white { color: white; }
+
+.grey { color: gray; }
+
+.transparant { opacity: 0.5; }
+
+/* --- TEXT --- */
+
+.no-copy {
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
+
+}
+
+.all-copy {  
+
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all; 
+
+}
+
+/* --- TEXT --- */
