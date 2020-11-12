@@ -7,6 +7,9 @@
 
 .grey { color: gray; }
 
+.blue{ color: blue; }
+
+
 .transparant { opacity: 0.5; }
 
 /* --- TRANSFORMS --- */
@@ -75,12 +78,25 @@
 
 } 
 
+.gap-50 {
+
+  gap: 20px;
+
+}
 .absolute {
 
   position: absolute;
   margin-left: auto; 
   margin-right: auto; 
+  width:100vw;
+  transform:translate(20%,0%);
   bottom: 50px;
+
+}@media screen and (max-width: 1080px) {
+
+  .absolute {
+    transform:translate(-40%,0%);
+  }
 
 }
 
