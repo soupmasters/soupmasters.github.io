@@ -14,7 +14,7 @@ section, summary, time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: sans-serif;
   vertical-align: baseline; 
 
 }
@@ -37,31 +37,75 @@ section, summary, time, mark, audio, video {
 
 }
 
+#banner2-section {
+
+  width: 120vw;
+  height: 40vh;
+
+}
+
+
+.gameplay-background {
+  background-size:cover;
+  background-image:url("../../images/banner3.gif");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.full {
+
+  width: 100%;
+  height: 100%;
+
+}
+
+.half {
+
+  width: 50%;
+  height: 50%;
+
+}
+
 .logo {
 
-  max-width: 50%;
-
-} @media screen and (max-width: 1080px) {
-
-  .logo {
-
-    max-width: 95%;
-    padding-bottom: 100px;
+  width: 50%;
+  margin-bottom: 50px;
+  filter: drop-shadow(5px 5px 0px red) drop-shadow(5px 5px 0px black);
   
+} 
+
+@media screen and (max-width: 1080px) {
+
+  .logo{
+
+    width: 95%;
+    content: url("../../images/futura-mobile.png");
+    filter: drop-shadow(2px 2px 0px red) drop-shadow(2px 2px 0px black);
+
   }
 
 }
 
-/* --- 3: LINKS --- */
+.twitter {
+  width: 20%;
+  margin-left: 100px;
+  filter: drop-shadow(2px 2px 0px white) drop-shadow(2px 2px 0px white) drop-shadow(2px 2px 0px black) drop-shadow(2px 2px 0px black);
+  
+}
 
+@media screen and (max-width: 1080px) {
 
-#links-section {
+  .twitter{
+    transform:translate(-25%,-0%);
+    width: 80%;
 
-  width: 100vw;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  }
 
 }
+/* --- 3: LINKS --- */
 
 .icon {
 
@@ -71,165 +115,48 @@ section, summary, time, mark, audio, video {
 
 .icon:hover {
 
-  transform: rotate(-5deg) scale(1.2);
-
-}
-
-/* --- 2: LEGAL --- */
-
-#legal-section {
-
-  width: 100vw;
-
-}
-
-
-/* --- FLEX LAYOUT --- */
-
-
-
-.flex-center {
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-} @media screen and (max-width: 1000px) {
-
-  .flex-center {
-
-    flex-direction: column;
-  
-  } 
-
-}
-
-.flex-updown {
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  transform: scale(1.2);
 
 }
 
  /* --- TEXT --- */
 
-h1, h2, h3, h4, h5, h6, p {
-
-  text-align: left;
-
-}
-
 h1 {
 
-   font-size: 30px;
-   font-weight: normal;
+   font-size: 300px;
+   font-weight: bold;
+   font-style: italic;
 
 
 }
 
 h2 {
 
-  font-size: 25px;
+  text-align: center;
+  font-size: 2.5vw;
   font-weight: bold;
+  font-style: italic;
+  color: black;
+  filter: drop-shadow(2px 2px 0px red) drop-shadow(2px 2px 0px white);
+
+} @media screen and (max-width: 1080px) {
+
+  h2 {
+    font-size: 25px;
+  }
 
 }
 
-p {
+a:link, a:visited { text-decoration: none; }
 
-  font-size: 20px;
-  font-weight: none;
+a { color: black; }
 
-}
-
-a:link, a:visited {
-
-  text-decoration: none;
-
-}
-
-a {
-    color: black;
-}
-
-.handwriting {
-
-  font-family: 'Gochi Hand', cursive;
-
-}
-
- /* --- GENERAL --- */
-
-html body {
-  
-  overflow: scroll;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-
-}
-
-::-webkit-scrollbar {
-  width: 0px; 
-  background: transparent;
-}
-
-
- /* --- EFFECTS --- overflow: visible; */ 
-
- .shadow-smear {
-
-  box-shadow: -5px 8px 50px 10px #555;
-
-}
-
-.tilt-left {
-
-  transform: rotate(-2deg);
-
-}
-
-.tilt-right {
-
-  transform: rotate(2deg);
-
-}
-
-.border {
-
-  border: 5px solid black;
-  padding: 5px 50px;
-  text-overflow: clip;
-
-}
+.handwriting { font-family: 'Gochi Hand', cursive; }
 
 span > .space-1{
 
   width: 3%;
   height: 3%;
-
-}
-
- /* --- EFFECTS --- overflow: visible; */ 
-
- .no-copy {
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none; 
-  user-select: none;
-
-}
-
-.all-copy {  
-
-  -webkit-user-select: all;
-  -moz-user-select: all;
-  -ms-user-select: all;
-  user-select: all; 
 
 }
 

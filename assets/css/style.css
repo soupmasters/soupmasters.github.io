@@ -9,6 +9,29 @@
 
 .transparant { opacity: 0.5; }
 
+/* --- TRANSFORMS --- */
+
+.tilt-left-5  { transform: rotate(-5deg); }
+
+.tilt-right-5 { transform: rotate(5deg); }
+
+.tilt-left-10 { transform: rotate(-10deg); }
+
+.tilt-right-10 { transform: rotate(10deg); }
+
+/* --- RESPONSIVES --- */
+
+.only-mobile  { display: none; }
+
+.only-desktop { display: block; }
+
+@media all and (max-width: 999px) {
+
+  .only-mobile  { display: block; }
+  .only-desktop { display: none; }
+
+}
+
 /* --- TEXT --- */
 
 .no-copy {
@@ -16,7 +39,7 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none; 
-  user-select: none;
+  user-select: none; 
 
 }
 
@@ -29,4 +52,60 @@
 
 }
 
-/* --- TEXT --- */
+/* --- FLEX LAYOUT --- */
+
+.flex-center {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+} 
+
+.flex-center-side {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+} 
+
+.absolute {
+
+  position: absolute;
+  margin-left: auto; 
+  margin-right: auto; 
+  bottom: 50px;
+
+}
+
+
+
+.flex-updown {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+html body {
+  
+  overflow: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+::-webkit-scrollbar {
+  width: 0px; 
+  background: transparent;
+}
