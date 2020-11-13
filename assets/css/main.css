@@ -37,14 +37,6 @@ section, summary, time, mark, audio, video {
 
 }
 
-#banner2-section {
-
-  width: 120vw;
-  height: 40vh;
-
-}
-
-
 .gameplay-background {
   background-size:cover;
   background-image:url("../../images/banner3.gif");
